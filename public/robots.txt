@@ -1,0 +1,14 @@
+# *
+User-agent: *
+Disallow: /404
+Disallow: /500
+
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://smartandglam.com
+
+# Sitemaps
+Sitemap: https://smartandglam.com/sitemap.xml

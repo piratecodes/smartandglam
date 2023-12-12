@@ -68,6 +68,7 @@ function footer() {
                 {/*    className="fa fa-telegram"></i></a></p>*/}
             </section>
         </div>
+        {/*<Link className={`sr-only`} href={`/sitemap.xml`} /><Link className={`sr-only`} href={`/sitemap-0.xml`} /><Link className={`sr-only`} href={`/robots.txt`} />*/}
         <Script src="https://use.fontawesome.com/03f8a0ebd4.js" />
     </footer>
   )
