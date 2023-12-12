@@ -77,9 +77,9 @@ export default function RootLayout({ children }) {
     "@type": "BeautySalon",
     "name": "Smart and Glam",
     "url": "https://smartandglam.com",
-    "logo": "logourl",
+    "logo": "https://smartandglam.com/icon-256x256.png",
     "priceRange": "$",
-    "image": "imageurl",
+    "image": "https://smartandglam.com/assets/cover.webp",
     "description": "Smart and Glam Family Salon is your one-stop shop for all your beauty needs! We offer a wide range of services for the whole family, from haircuts and hairdressing to hair straightening, braidal makeup, hair spa, party makeup, botox treatment, and much more.",
     "address": {
       "@type": "PostalAddress",
