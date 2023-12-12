@@ -13,7 +13,7 @@ export default function Testimonials(){
           <div
               className="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white shadow-2xl shadow-gray-600/10">
             <div className="flex gap-4">
-              <Image className="w-12 h-12 rounded-full" src="./images/avatars/avatar.webp" alt="user avatar" width="400"
+              <Image className="w-12 h-12 rounded-full" src="/images/avatars/avatar.webp" alt="user avatar" width="400"
                    height="400"/>
                 <div>
                   <h6 className="text-lg font-medium text-gray-700">Daniella Doe</h6>
@@ -24,7 +24,7 @@ export default function Testimonials(){
           <div
               className="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white shadow-2xl shadow-gray-600/10">
             <div className="flex gap-4">
-              <Image className="w-12 h-12 rounded-full" src="./images/avatars/avatar-1.webp" alt="user avatar" width="200"
+              <Image className="w-12 h-12 rounded-full" src="/images/avatars/avatar-1.webp" alt="user avatar" width="200"
                    height="200"/>
                 <div>
                   <h6 className="text-lg font-medium text-gray-700">Jane doe</h6>
@@ -35,7 +35,7 @@ export default function Testimonials(){
           <div
               className="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white shadow-2xl shadow-gray-600/10">
             <div className="flex gap-4">
-              <Image className="w-12 h-12 rounded-full" src="./images/avatars/avatar-2.webp" alt="user avatar" width="200"
+              <Image className="w-12 h-12 rounded-full" src="/images/avatars/avatar-2.webp" alt="user avatar" width="200"
                    height="200"/>
                 <div>
                   <h6 className="text-lg font-medium text-gray-700">Yanick Doe</h6>
@@ -46,7 +46,7 @@ export default function Testimonials(){
           <div
               className="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white shadow-2xl shadow-gray-600/10">
             <div className="flex gap-4">
-              <Image className="w-12 h-12 rounded-full" src="./images/avatars/avatar-3.webp" alt="user avatar" width="200"
+              <Image className="w-12 h-12 rounded-full" src="/images/avatars/avatar-3.webp" alt="user avatar" width="200"
                    height="200"/>
                 <div>
                   <h6 className="text-lg font-medium text-gray-700">Jane Doe</h6>
@@ -57,7 +57,7 @@ export default function Testimonials(){
           <div
               className="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white shadow-2xl shadow-gray-600/10">
             <div className="flex gap-4">
-              <Image className="w-12 h-12 rounded-full" src="./images/avatars/avatar-4.webp" alt="user avatar" width="200"
+              <Image className="w-12 h-12 rounded-full" src="/images/avatars/avatar-4.webp" alt="user avatar" width="200"
                    height="200"/>
                 <div>
                   <h6 className="text-lg font-medium text-gray-700">Andy Doe</h6>
@@ -68,7 +68,7 @@ export default function Testimonials(){
           <div
               className="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white shadow-2xl shadow-gray-600/10">
             <div className="flex gap-4">
-              <Image className="w-12 h-12 rounded-full" src="./images/avatars/avatar-2.webp" alt="user avatar" width="400"
+              <Image className="w-12 h-12 rounded-full" src="/images/avatars/avatar-2.webp" alt="user avatar" width="400"
                    height="400"/>
                 <div>
                   <h6 className="text-lg font-medium text-gray-700">Yanndy Doe</h6>
