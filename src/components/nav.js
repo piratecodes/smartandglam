@@ -1,16 +1,15 @@
 'use client'
-import React, { useRef, useState, useEffect } from 'react'
+import { useRef as Ref, useState as State, useEffect as Effect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
 import logo from '@/assets/logo.svg'
 function nav() {
-    const [isToggled, setIsToogled] = useState(false)
-    const ref = useRef();
-    const navlinks = useRef();
-    const hamburger = useRef();
-    const navLayer = useRef();
-    const toolRef = useRef();
+    const [isToggled, setIsToogled] = State(false)
+    const navlinks = Ref();
+    const hamburger = Ref();
+    const navLayer = Ref();
+    const toolRef = Ref();
     const links = [
         {
             to: "/#features",
@@ -40,7 +39,7 @@ function nav() {
             setIsToogled(false)
         }
     }
-    useEffect(() => {
+    Effect(() => {
         const checkIfClickedOutside = (e) => {
             // If the menu is open and the clicked target is not within the menu,
             // then close the menu
