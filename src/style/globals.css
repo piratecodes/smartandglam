@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Prevent text selection */
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+@layer base {
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+
+
+
+ #toggle_nav:checked ~ div #hamburger #line {
+     @apply translate-y-1.5 rotate-45;
+ }
+
+#toggle_nav:checked ~ div #hamburger #line2 {
+    @apply -translate-y-1 -rotate-45;
+}
+
+.toggled div:first-child {
+    @apply translate-y-1.5 rotate-45;
+}
+.toggled div:last-child {
+    @apply -translate-y-1 -rotate-45;
+}

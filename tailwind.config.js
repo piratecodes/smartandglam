@@ -1,3 +1,6 @@
+const colors = require('tailwindcss/colors')
+
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -6,13 +9,41 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    container: {
+      center: true,
+    },
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      transitionDuration: {
+        '2000': '2000ms',
       },
+      fontSize:{
+        'xxs': ['10px', '16px']
+      },
+      width: {
+        '4.5': '1.125rem',
+      },
+      height: {
+        '4.5': '1.125rem',
+        '100':'30rem',
+        '105':'32rem'
+      },
+      colors: {
+        stone: colors.stone,
+        zinc: colors.zinc,
+        neutral: colors.neutral,
+        fuchsia: colors.fuchsia,
+        teal: colors.teal
+      },
+      spacing: {
+        '0.25': '0.0625rem',
+      },
+      screens: {
+        'xs': '350px',
+      }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
+  darkMode: 'class',
 }

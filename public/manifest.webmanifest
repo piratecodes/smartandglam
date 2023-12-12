@@ -1,0 +1,32 @@
+{
+    "theme_color": "#15803d",
+    "background_color": "#16a34a",
+    "display": "minimal-ui",
+    "scope": "/",
+    "start_url": "/",
+    "name": "Smart and Glam Family Salon",
+    "short_name": "Smart and Glam",
+    "description": "Smart and Glam Family Salon is your one-stop shop for all your beauty needs! We offer a wide range of services for the whole family, from haircuts and hairdressing to hair straightening, braidal makeup, hair spa, party makeup, botox treatment, and much more.",
+    "icons": [
+        {
+            "src": "/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
