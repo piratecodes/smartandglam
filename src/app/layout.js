@@ -87,7 +87,19 @@ export default function RootLayout({ children }) {
       "addressLocality": "Barrackpore",
       "addressRegion": "West Bengal",
       "postalCode": "700122",
-      "addressCountry": "India"
+      "addressCountry": "IN"
+    },
+    "review": {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Lillian Ruiz"
+      }
     },
     "geo": {
       "@type": "GeoCoordinates",
