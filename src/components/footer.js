@@ -1,4 +1,6 @@
+'use client'
 import Link from 'next/link'
+import Obfuscate from 'react-obfuscate'
 import Script from 'next/script'
 
 function footer() {
@@ -15,7 +17,7 @@ function footer() {
             </section>
             <section className="w-7/12 h-auto lg:px-4 flex flex-col justify-start">
                 <label className={`text-white`} htmlFor={`map`}>Find us by Map</label>
-                <iframe id={`map`} className="w-full h-full mt-1.5"
+                <iframe id={`map`} className="w-full h-full mt-1.5" title={`smart and glam google map`}
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.7730948285857!2d88.38701907592207!3d22.773800525564955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89b007e84a3ef%3A0x73f822ca9fb28658!2sSmart%20And%20Glam%20Family%20Saloon!5e0!3m2!1sen!2sin!4v1702330675274!5m2!1sen!2sin"
                     referrerPolicy="no-referrer-when-downgrade"/>
             </section>
@@ -32,10 +34,8 @@ function footer() {
                     <p>Purbasha Ln No. 2, Kalyani Highway, <br/> Barrackpore, Kolkata -700122, <br/> West Bengal, India</p>
                 </div>
                 <div className="leading-7 mt-4 text-[15px] font-[500]">
-                    <p className="space-x-3 hover:text-[#cacaca]"><i className="fa fa-phone text-[17px]"></i> <a
-                        href="#"> +91 9143491413</a></p>
-                    <p className="space-x-3 hover:text-[#cacaca]"><i className="fa fa-envelope text-[16px]"></i> <a href="#">
-                        contact@smartandglam.com</a></p>
+                    <p className="space-x-3 hover:text-[#cacaca]"><i className="fa fa-phone text-[17px]"></i> <Obfuscate tel={`+919143491413`} /></p>
+                    <p className="space-x-3 hover:text-[#cacaca]"><i className="fa fa-envelope text-[16px]"></i><Obfuscate email={`contact@smartandglam.com`} /></p>
                 </div>
             </section>
         </div>
@@ -46,8 +46,8 @@ function footer() {
             </section>
             <section className={`flex justify-center space-x-3`}>
                 <p><Link href="https://www.facebook.com/SmartandGlam2018" target={`_blank`}
-                      className="w-10 h-10 bg-[#474747] hover:text-blue-500 transform ease-in-out duration-500 hover:bg-white rounded-full inline-block pt-[7px]"><i
-                    className="fa fa-facebook"></i></Link></p>
+                      className="w-10 h-10 bg-[#474747] hover:text-blue-500 transform ease-in-out duration-500 hover:bg-white rounded-full inline-block pt-[7px]"><i id={`fb-logo`}
+                    className="fa fa-facebook"></i><label htmlFor={`fb-logo`} className={`sr-only`}>Facebook</label></Link></p>
                 {/*<p><a href="#"*/}
                 {/*      className="w-10 h-10 bg-[#474747] hover:text-blue-500 transform ease-in-out duration-500 hover:bg-white rounded-full inline-block pt-[6px]"><i*/}
                 {/*    className="fa fa-twitter"></i></a></p>*/}

@@ -40,22 +40,22 @@ export default function Hero(){
                 </div>
                 <div className="mt-12 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4">
                     <section className="p-4 grayscale transition duration-200 hover:grayscale-0">
-                        <Image src={wella} height="0" width="0" sizes="100vw" className={`h-16 w-auto mx-auto`} alt={`wella logo`} />
+                        <Image src={wella} height="0" width="0" sizes="100vw" className={`h-16 w-auto mx-auto`} alt={`wella logo`} objectFit={`contain`} />
                     </section>
                     <section className="p-4 grayscale transition duration-200 hover:grayscale-0">
-                        <Image src={lotus} height="0" width="0" sizes="100vw" className={`h-16 w-auto mx-auto`} alt={`wella logo`} />
+                        <Image src={lotus} height="0" width="0" sizes="100vw" className={`h-16 w-auto mx-auto`} alt={`wella logo`} objectFit={`contain`} />
                     </section>
                     <section className="p-4 flex grayscale transition duration-200 hover:grayscale-0">
-                        <Image src={matrix} height="0" width="0" sizes="100vw" className={`h-16 w-auto mx-auto`} alt={`wella logo`} />
+                        <Image src={matrix} height="0" width="0" sizes="100vw" className={`h-16 w-auto mx-auto`} alt={`wella logo`} objectFit={`contain`} />
                     </section>
                     <section className="p-4 grayscale transition duration-200 hover:grayscale-0">
-                        <Image src={schw} height="0" width="0" sizes="100vw" className={`h-16 w-auto mx-auto`} alt={`wella logo`} />
+                        <Image src={schw} height="0" width="0" sizes="100vw" className={`h-16 w-auto mx-auto`} alt={`wella logo`} objectFit={`contain`} />
                     </section>
                     <section className="p-4 flex grayscale transition duration-200 hover:grayscale-0">
-                        <Image src={loreal} height="0" width="0" sizes="100vw" className={`h-16 w-auto mx-auto`} alt={`wella logo`} />
+                        <Image src={loreal} height="0" width="0" sizes="100vw" className={`h-16 w-auto mx-auto`} alt={`wella logo`} objectFit={`contain`} />
                     </section>
                     <section className="p-4 grayscale transition duration-200 hover:grayscale-0">
-                        <Image src={raga} height="0" width="0" sizes="100vw" className={`h-16 w-auto mx-auto`} alt={`wella logo`} />
+                        <Image src={raga} height="0" width="0" sizes="100vw" className={`h-16 w-auto mx-auto`} alt={`wella logo`} objectFit={`contain`} />
                     </section>
                 </div>
             </div>

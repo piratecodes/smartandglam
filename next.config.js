@@ -62,6 +62,6 @@ module.exports = withPWA(
             useFileSystemPublicRoutes: true,
             poweredByHeader: false,
             images: {
-                remotePatterns: [{hostname: "localhost" }, {hostname: "cdn-icons-png.flaticon.com"}],
+                remotePatterns: [{hostname: "localhost" }, {hostname: "cdn-icons-png.flaticon.com"}, {hostname: "www.facebook.com"}],
             },
         })

@@ -66,7 +66,8 @@ function nav() {
       <nav className='relative sticky z-50 backdrop-blur-sm bg-stone-800/80 top-0 left-0 flex flex-wrap items-center justify-between gap-6 px-5 lg:px-10 md:gap-0'>
           <div className="relative w-full z-20 flex justify-between md:px-0 lg:w-max">
               <Link href="/" aria-label="logo" className={`p-1 flex flex-row space-x-1.5 items-center text-2xl h-full w-full`}>
-                  <Image className={`h-12 w-auto`} alt={`SG Logo`} src={logo} height="0" width="0" sizes="100vw" />
+                  <Image id={`SG Logo`} className={`h-12 w-auto`} alt={`SG Logo`} src={logo} height="0" width="0" sizes="100vw" />
+                  <label className={`sr-only`} htmlFor={`SG Logo`}>Smart And Glam</label>
                   <span className={`font-bold text-neutral-200`}>Smart & Glam</span>
               </Link>
               <div className="relative flex max-h-10 items-center lg:hidden" ref={toolRef}>

@@ -2,6 +2,7 @@ import '@/style/globals.css'
 
 import React from 'react'
 import Script from 'next/script'
+import Image from 'next/image'
 import { Cormorant_Garamond } from 'next/font/google'
 import NextTopLoader from 'nextjs-toploader'
 import { SpeedInsights } from "@vercel/speed-insights/next"
@@ -27,6 +28,7 @@ export const metadata = {
     canonical: `https://www.smartandglam.com`,
   },
   openGraph: {
+    locale: "en_US",
     url: 'https://smartandglam.com',
     title: 'Smart and Glam Family Salon',
     type: 'website',
@@ -133,6 +135,22 @@ export default function RootLayout({ children }) {
             try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
             catch(e){window.attachEvent("onload", $buo_f)}
         `}} />
+
+        {/* Meta Pixel Install  */}
+        <Script id={`meta-pixel-install`} dangerouslySetInnerHTML={{__html: `
+          !function(f,b,e,v,n,t,s)
+          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+          fbq('init', '180743698099406');
+          fbq('track', 'PageView');
+        `}} />
+        <noscript><Image className={`hidden`} height="1" width="1" src="https://www.facebook.com/tr?id=180743698099406&ev=PageView&noscript=1"/></noscript>
+
       </head>
       <body className={"bg-gradient-to-r from-green-600 via-neutral-300 to-green-700 overflow-x-hidden scrollbar-thin scrollbar-thumb-stone-800 scrollbar-track-blue-gray-100 scroll-smooth " + corGar.className}>
       {/* Google Tag Manager (noscript) */}
