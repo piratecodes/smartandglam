@@ -2,7 +2,7 @@
   "buildCommand": "next build",
   "framework": "nextjs",
   "regions": ["bom1"],
-  "functionFailoverRegions": ["sin1", "hkg1", "cdg1", "lhr1"],
+
   "headers": [
     {
       "source": "/service-worker.js",
