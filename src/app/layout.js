@@ -100,7 +100,7 @@ export default function RootLayout({ children }) {
       },
       "author": {
         "@type": "Person",
-        "name": "Lillian Ruiz"
+        "name": "Subham Sarkar"
       }
     },
     "geo": {
@@ -109,8 +109,15 @@ export default function RootLayout({ children }) {
       "longitude": "88.389594"
     },
     "hasMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.7730948285857!2d88.38701907592207!3d22.773800525564955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89b007e84a3ef%3A0x73f822ca9fb28658!2sSmart%20And%20Glam%20Family%20Saloon!5e0!3m2!1sen!2sin!4v1702330675274!5m2!1sen!2sin",
-    "openingHours": "Mo 09:00-21:30 Tu 09:00-21:30 We 09:00-21:30 Th 09:00-21:30 Fr 09:00-21:30 Sa 09:00-21:30 Su 09:00-21:30",
-    "telephone": "+91 9143491413"
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" ],
+      "opens": "09:30",
+      "closes": "21:00"
+    },
+    "telephone": "+91 9143491413",
+    "sameAs": "https://www.facebook.com/Smartandglam2018"
+
   }
   return (
       <html lang="en">
@@ -147,7 +154,7 @@ export default function RootLayout({ children }) {
             s.parentNode.insertBefore(t,s)}(window, document,'script',
           'https://connect.facebook.net/en_US/fbevents.js');
           fbq('init', '180743698099406');
-          fbq('track', 'PageView'); fbq('track', 'ViewContent');
+          fbq('track', 'PageView'); 
         `}} />
         <noscript><Image className={`hidden`} height="1" width="1" src="https://www.facebook.com/tr?id=180743698099406&ev=PageView&noscript=1"/></noscript>
 
